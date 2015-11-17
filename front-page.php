@@ -19,19 +19,19 @@ if ( get_theme_mod( 'unconditional_services_visibility' ) != 1 ) { ?>
 		 <div class="col-sm-12">
 		 <?php } else { ?>
 		 <div class="col-sm-8">
-		 <?php } 
-		    if ( 'posts' == get_option( 'show_on_front' ) ) { 
+		 <?php }
+		    if ( 'posts' == get_option( 'show_on_front' ) ) {
 			    if ( get_theme_mod( 'unconditional_feed_header_visibility' ) != 1 ) {
 			        if (get_theme_mod( 'unconditional_feed_header_title' )) { ?>
-					 
-				        <h3 class="feed head text-center"><?php echo $unconditional_feed_header ?></h3>
+
+				        <h3 class="feed head text-center"><?php echo "Aarontax"; //$unconditional_feed_header ?></h3>
                     <?php } else { ?>
-                        <h3 class="feed head text-center"><?php _e('Latest News On ', 'unconditional' ); ?><?php bloginfo( 'name' ); ?><sup>™</sup></h3>
-					 
+                        <h3 class="feed head text-center"><?php _e('Latest News On ', 'AaronTax' ); ?><?php bloginfo( 'name' ); ?><sup>™</sup></h3>
+
 				    <?php }
-			    } 
-  			        get_template_part( 'content/feed' ); 
-		    } else { 
+			    }
+  			        get_template_part( 'content/feed' );
+		    } else {
 			    while ( have_posts() ) : the_post();
                     get_template_part( 'content/content', 'page' );
                 endwhile; // end of the loop.
@@ -43,13 +43,13 @@ if ( get_theme_mod( 'unconditional_services_visibility' ) != 1 ) { ?>
 		     <?php get_sidebar(); ?>
 		 </div>
 		 <?php } ?>
-		  
+
         </div>
       </div>
    </div>
 </section>
 <?php if ( class_exists( 'Jetpack' ) ) :
-if ( get_theme_mod( 'unconditional_home_projects_visibility' ) != 0 ) { 
+if ( get_theme_mod( 'unconditional_home_projects_visibility' ) != 0 ) {
 $unconditional_proj_header = esc_html(get_theme_mod( 'unconditional_project_header_title' )); ?>
 <section class="container-fluid" id="section8">
     <div class="col-sm-10 col-sm-offset-1">
@@ -62,12 +62,12 @@ $unconditional_proj_header = esc_html(get_theme_mod( 'unconditional_project_head
                   <h3 class="project head text-center"><?php _e( 'Latest Projects On ', 'unconditional'); ?><?php bloginfo( 'name' ); ?><sup>™</sup></h3>
 				  <div class="project-title-separator"></div>
 			  <?php }
-			  
+
 			  }
               get_template_part( 'content/content', 'portfolio-home' ); ?>
         </div>
-    </div>	
+    </div>
 </section>
-<?php } 
+<?php }
 endif;
 get_footer(); ?>
