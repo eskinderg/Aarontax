@@ -1,0 +1,83 @@
+/* 
+Theme Name:     Aaron Tax
+Theme URI:      http://www.eskinder.net
+Description:    aarontax wordpress theme
+Author:         AaronTax
+Author URI:     http://www.eskinder.net
+Version:        1.0.0
+License:		GNU General Public License v3.0
+License URI:	http://www.gnu.org/licenses/gpl-3.0.html
+Tags:           light, blue, custom-menu, custom-background, custom-header, two-columns, right-sidebar, fluid-layout, responsive-layout, featured-images, threaded-comments, microformats, translation-ready 
+Text Domain:    AaronTax 
+*/
+
+body,html
+{
+    font-family: "Roboto Condensed",sans-serif;
+}
+
+body.admin-bar .navbar-fixed-top  {
+    margin-top: 28px;
+}
+
+#header-image img {
+	padding-bottom: 32px;
+}
+
+#section2 {
+    margin-top: 60px;
+}
+
+section.top-section {
+	margin-top: 48px;
+	padding-top: 0px;  
+    padding-bottom: 0px;
+}
+
+#section5 {
+	background-color: #f33f3f;
+}
+
+.header-inner  {
+background-color: transparent;
+padding: 0px 0 0 0;
+max-height: 90px;
+height: 100%;
+overflow: hidden; 
+}
+
+.header-inner h1,
+.header-inner h2, 
+.header-inner h3,
+.header-inner h4, 
+.header-inner h5{
+text-align:center;
+color:#fff;
+}
+.header-inner h1{
+font-size:36px;
+font-family: 'Roboto Condensed', sans-serif;
+font-weight:bold;
+text-transform: uppercase;
+margin: 0px auto 0px;
+text-shadow: 1px 1px 1px #fefefe;
+-webkit-text-shadow: 1px 1px 1px #fefefe;
+-moz-text-shadow: 1px 1px 1px #fefefe;
+}
+
+.header-inner a:hover {
+	text-decoration: none;
+}
+
+.header-inner .v-center {
+    padding-top: 2%;
+}
+.header-inner h1.v-center a {
+    color: #ffffff;
+	padding-bottom: 1%;
+}
+
+.single #section7,
+.singular #section7 {
+    margin-top: 0px;
+}
