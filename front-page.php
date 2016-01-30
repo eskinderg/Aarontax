@@ -24,7 +24,7 @@ if ( get_theme_mod( 'unconditional_services_visibility' ) != 1 ) { ?>
 			    if ( get_theme_mod( 'unconditional_feed_header_visibility' ) != 1 ) {
 			        if (get_theme_mod( 'unconditional_feed_header_title' )) { ?>
 
-				        <h3 class="feed head text-center"><?php echo "Aarontax"; //$unconditional_feed_header ?></h3>
+				        <h3 class="feed head text-center"><?php //echo "Latest Postss"; //$unconditional_feed_header ?></h3>
                     <?php } else { ?>
                         <h3 class="feed head text-center"><?php _e('Latest News On ', 'AaronTax' ); ?><?php bloginfo( 'name' ); ?><sup>™</sup></h3>
 
